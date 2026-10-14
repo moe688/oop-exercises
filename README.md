@@ -57,6 +57,8 @@ Expected:
 
 **Question to answer:** why did `b` not change when you called `a.increment()`?
 
+`b` did not change when I called `a.increment()` beause the two objects are independet from one another and each holds a different value.
+
 ---
 
 ## 3\. Protect your data
@@ -93,6 +95,8 @@ Hint Private fields start with `#`: declare `#balance = 0;` at the top of the cl
 
 **Try this:** write `account.#balance = 1000000` outside the class. What happens and why is that good?
 
+Property '#balance' is not accessible outside class 'BankAccount' because it has a private identifier. This is good to prevent data tempering.
+
 **About `#` and `private`:** in JavaScript, `#` is how you make something private. In TypeScript you can also write it explicitly:
 
 ```ts
@@ -127,6 +131,9 @@ Expected:
 
 **Question to answer:** why is `area` still correct after changing the width?
 
+width was never changed.
+Property '#width' is not accessible outside class 'Rectangle' because it has a private identifier.
+
 ---
 
 ## 5\. Inheritance
@@ -160,6 +167,6 @@ Hint `class Dog extends Animal { ... }`. If you write a constructor in `Dog`, yo
 - [X] 1\. Your first class  
 - [X] 2\. Objects remember things  
 - [X] 3\. Protect your data  
-- [ ] 4\. Computed properties  
-- [ ] 5\. Inheritance
+- [X] 4\. Computed properties  
+- [X] 5\. Inheritance
 
