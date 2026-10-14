@@ -158,7 +158,7 @@ Hint `class Dog extends Animal { ... }`. If you write a constructor in `Dog`, yo
 ## Checklist
 
 - [X] 1\. Your first class  
-- [ ] 2\. Objects remember things  
+- [X] 2\. Objects remember things  
 - [ ] 3\. Protect your data  
 - [ ] 4\. Computed properties  
 - [ ] 5\. Inheritance
