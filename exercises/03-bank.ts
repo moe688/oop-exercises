@@ -14,7 +14,7 @@ class BankAccount {
 		}
 		this.#balance = this.#balance - withdrawAmount;
 	}
-	getBalance() {
+	get balance() {
 		return this.#balance;
 	}
 }
@@ -22,7 +22,7 @@ class BankAccount {
 const account = new BankAccount();
 account.deposit(100);
 account.withdraw(30);
-console.log(account.getBalance());
+console.log(account.balance);
 
 try {
 	account.withdraw(500);
